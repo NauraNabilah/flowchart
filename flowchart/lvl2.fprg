@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="naura"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-03-25 03:57:13 PM"/>
+        <attribute name="created" value="bmF1cmE7TkFVUkE7MjAyMy0wMy0wOTswNTo1MDoyOCBQTTsyMTkz"/>
+        <attribute name="edited" value="bmF1cmE7TkFVUkE7MjAyMy0wMy0yNTswMzo1NzoxMyBQTTs2OzIzMDM="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="angka, jumlahAngka, angkaMax" type="Integer" array="False" size=""/>
+            <assign variable="angkaMax" expression="0"/>
+            <for variable="jumlahAngka" start="0" end="99" direction="inc" step="1">
+                <input variable="angka"/>
+                <if expression="angka &gt; angkaMax">
+                    <then>
+                        <assign variable="angkaMax" expression="angka"/>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+            <output expression="angkaMax" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

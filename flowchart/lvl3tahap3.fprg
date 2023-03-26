@@ -1,0 +1,83 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="naura"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-03-25 03:26:41 PM"/>
+        <attribute name="created" value="bmF1cmE7TkFVUkE7MjAyMy0wMy0wOTswNjoyMzo1MSBQTTsyMTkw"/>
+        <attribute name="edited" value="bmF1cmE7TkFVUkE7MjAyMy0wMy0yNTswMzoyNjo0MSBQTTs2OzIzMDA="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b, c, sisiMin, sisiTengah, sisiMax" type="Integer" array="False" size=""/>
+            <input variable="a"/>
+            <input variable="b"/>
+            <input variable="c"/>
+            <if expression="a&gt;b">
+                <then>
+                    <if expression="a&gt;c">
+                        <then>
+                            <if expression="b&gt;c">
+                                <then>
+                                    <assign variable="sisiMin" expression="c"/>
+                                    <assign variable="sisiTengah" expression="b"/>
+                                    <assign variable="sisiMax" expression="a"/>
+                                </then>
+                                <else>
+                                    <assign variable="sisiMin" expression="b"/>
+                                    <assign variable="sisiTengah" expression="c"/>
+                                    <assign variable="sisiMax" expression="a"/>
+                                </else>
+                            </if>
+                        </then>
+                        <else>
+                            <assign variable="sisiMin" expression="b"/>
+                            <assign variable="sisiTengah" expression="a"/>
+                            <assign variable="sisiMax" expression="c"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <if expression="b&gt;c">
+                        <then>
+                            <if expression="b&gt;c">
+                                <then>
+                                    <assign variable="sisiMin" expression="c"/>
+                                    <assign variable="sisiTengah" expression="a"/>
+                                    <assign variable="sisiMax" expression="b"/>
+                                </then>
+                                <else>
+                                    <assign variable="sisiMin" expression="a"/>
+                                    <assign variable="sisiTengah" expression="c"/>
+                                    <assign variable="sisiMax" expression="b"/>
+                                </else>
+                            </if>
+                        </then>
+                        <else>
+                            <assign variable="sisiMin" expression="a"/>
+                            <assign variable="sisiTengah" expression="b"/>
+                            <assign variable="sisiMax" expression="c"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <if expression="(sisiMin = sisiTengah) AND (sisiMin = sisiMax)">
+                <then>
+                    <output expression="&quot;SAMA SISI&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="(sisiMin = sisiTengah) OR (sisiTengah = sisiMax) OR (sisiMin = sisiMax)">
+                        <then>
+                            <output expression="&quot;SAMA KAKI&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;SEMBARANG&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

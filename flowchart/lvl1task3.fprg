@@ -1,0 +1,72 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="naura"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-03-10 09:38:12 AM"/>
+        <attribute name="created" value="bmF1cmE7TkFVUkE7MjAyMy0wMy0wNzswNzo0OTo1MiBQTTsyMTk4"/>
+        <attribute name="edited" value="bmF1cmE7TkFVUkE7MjAyMy0wMy0xMDswOTozODoxMiBBTTsyOzIyODI="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b, c, d" type="Integer" array="False" size=""/>
+            <input variable="a"/>
+            <input variable="b"/>
+            <input variable="c"/>
+            <input variable="d"/>
+            <if expression="a&gt;b">
+                <then>
+                    <if expression="a &gt; c">
+                        <then>
+                            <if expression="a &gt; d">
+                                <then>
+                                    <output expression="a" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="d" newline="True"/>
+                                </else>
+                            </if>
+                        </then>
+                        <else>
+                            <if expression="c &gt; d">
+                                <then>
+                                    <output expression="c" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="d" newline="True"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                    <output expression="a" newline="True"/>
+                </then>
+                <else>
+                    <if expression="b &gt; c">
+                        <then>
+                            <if expression="b &gt; d">
+                                <then>
+                                    <output expression="b" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="d" newline="True"/>
+                                </else>
+                            </if>
+                        </then>
+                        <else>
+                            <if expression="c &gt; d">
+                                <then>
+                                    <output expression="c" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="d" newline="True"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
